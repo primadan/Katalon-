@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+API Test,,,,2020-10-27 17:00:39,2020-10-27 17:00:47,8.008s,INCOMPLETE
+,,,,,,,
+Test Cases/UserDataCountry/UserCountryDetails,,,,2020-10-27 17:00:39,2020-10-27 17:00:44,4.498s,PASSED
+"response = sendRequest(findTestObject(""DataUser/GetUserDetails""))",,,,2020-10-27 17:00:40,2020-10-27 17:00:43,3.693s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2020-10-27 17:00:43,2020-10-27 17:00:43,0.037s,PASSED
+"verifyElementPropertyValue(response, ""data.last_name"", ""Weaver"")",,,,2020-10-27 17:00:43,2020-10-27 17:00:44,0.163s,PASSED
+"verifyElementPropertyValue(response, ""data.id"", ""2"")",,,,2020-10-27 17:00:44,2020-10-27 17:00:44,0.073s,PASSED
+,,,,,,,
+Test Cases/UserDataCountry/detailsUser,,,,2020-10-27 17:00:44,2020-10-27 17:00:47,3.161s,PASSED
+"response = sendRequest(findTestObject(""DataUser/GetUserDetails2""))",,,,2020-10-27 17:00:44,2020-10-27 17:00:46,1.722s,PASSED
+"response = sendRequestAndVerify(findTestObject(""DataUser/GetUserDetails2""))",,,,2020-10-27 17:00:46,2020-10-27 17:00:47,0.853s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2020-10-27 17:00:47,2020-10-27 17:00:47,0.016s,PASSED
+"verifyElementPropertyValue(response, ""data[0].email"", ""michael.lawson@reqres.in"")",,,,2020-10-27 17:00:47,2020-10-27 17:00:47,0.072s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Lindsay"")",,,,2020-10-27 17:00:47,2020-10-27 17:00:47,0.039s,PASSED
+"verifyElementsCount(response, ""data"", 6)",,,,2020-10-27 17:00:47,2020-10-27 17:00:47,0.061s,PASSED
+"verifyResponseStatusCodeInRange(response, 200, 500)",,,,2020-10-27 17:00:47,2020-10-27 17:00:47,0.024s,PASSED
